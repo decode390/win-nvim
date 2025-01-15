@@ -93,3 +93,9 @@ map('n', '<leader>ds', ndapui.toggle)
 map('n', '<leader>do', ndap.repl.open)
 map('n', '<leader>dl', ndap.run_last)
 
+-- Git
+map('n', '<leader>gp', '<CMD>:Gitsigns preview_hunk<CR>')
+map('n', '<leader>gn', '<CMD>:Gitsigns next_hunk<CR>' )
+map('n', '<leader>gp', '<CMD>:Gitsigns prev_hunk<CR>' )
+map('n', '<leader>gr', '<CMD>:Gitsigns reset_hunk<CR>' )
+
