@@ -33,6 +33,10 @@ return require('packer').startup(function(use)
 		end,
 	})
 
+  use({
+    'folke/tokyonight.nvim',
+  })
+
 
   -- Navigation
 	use ({
@@ -166,6 +170,44 @@ return require('packer').startup(function(use)
     'tpope/vim-fugitive',
     config = function()
     end,
+  })
+
+  use({
+    'nanozuki/tabby.nvim',
+    requires = {{'nvim-tree/nvim-web-devicons'}},
+    config = function()
+      require('tabby').setup()
+    end,
+  })
+
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function() 
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+    config = function() 
+      require('nvim-treesitter.configs').setup({
+        ensure_installed = {'lua', 'c_sharp'},
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlighting = false
+        },
+        indent = {
+          enable = true
+        },
+      })
+
+      vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEnter'}, {
+        group = vim.api.nvim_create_augroup('TS_FOLD_WORKAROUND', {}),
+        callback = function()
+          vim.opt.foldmethod     = 'expr'
+          vim.opt.foldexpr       = 'nvim_treesitter#foldexpr()'
+        end
+      })
+    end,
+
+
   })
 
 end)

@@ -36,3 +36,4 @@ g.maplocalleader = ' '
 
 --vim.opt.undofile = true
 --vim.opt.undodir = vim.fn.expand('C:\\Users\\Miguel\\AppData\\Local\\nvim\\undo')
+--o.tabline = '%t'
