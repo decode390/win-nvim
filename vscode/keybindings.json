@@ -1,0 +1,123 @@
+// Place your key bindings in this file to override the defaults
+[
+    // {
+    //     "key": "ctrl+n",
+    //     "command": "-workbench.action.files.newUntitledFile"
+    // },
+    // {
+    //     "key": "ctrl+u",
+    //     "command": "workbench.action.quickOpenSelectNext",
+    // },
+    // {
+        
+    //     "key": "ctrl+i",
+    //     "command": "workbench.action.quickOpenSelectPrevious",
+    // },
+    // {
+    //     "key": "ctrl+u",
+    //     "command": "selectNextSuggestion",
+    //     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    // },
+    // {
+    //     "key": "ctrl+i",
+    //     "command": "selectPrevSuggestion",
+    //     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    // },
+    // {
+    //     "key": "ctrl+alt+v",
+    //     "command": "toggleVim"
+    // },
+    // {
+    //     "key": "ctrl+r",
+    //     "command": "-workbench.action.openRecent"
+    // },
+    // {
+    //     "key": "ctrl+e",
+    //     "command": "-workbench.action.quickOpen"
+    // },
+    // // {
+    // //     "key": "ctrl+d",
+    // //     "command": "-editor.action.addSelectionToNextFindMatch",
+    // //     "when": "editorFocus"
+    // // },
+    // {
+    //     "key": "ctrl+o",
+    //     "command": "-workbench.action.files.openFile",
+    //     "when": "true"
+    // },
+    // {
+    //     "key": "ctrl+v",
+    //     "command": "-editor.action.clipboardPasteAction"
+    // },
+    // {
+    //     "key": "space e",
+    //     "command": "workbench.action.toggleSidebarVisibility",
+    //     "when": "filesExplorerFocus && !inputFocus"
+    // },
+    // {
+    //     "key": "a",
+    //     "command": "explorer.newFile",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    // },
+    // {
+    //     "key": "f",
+    //     "command": "explorer.newFolder",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    // },
+    // {
+    //     "key": "r",
+    //     "command": "renameFile",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    // },
+    // {
+    //     "key": "x",
+    //     "command": "filesExplorer.cut",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    // },
+    // {
+    //     "key": "y",
+    //     "command": "filesExplorer.copy",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    // },
+    // {
+    //     "key": "p",
+    //     "command": "filesExplorer.paste",
+    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    // },
+    // {
+    //     "key": "ctrl+d",
+    //     "command": "-extension.vim_ctrl+d",
+    //     "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    // },
+    // {
+    //     "key": "meta+c",
+    //     "command": "-extension.vim_cmd+c",
+    //     "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
+    // },
+
+
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen && neovim.mode != 'cmdline'"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+]

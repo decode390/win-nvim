@@ -1,0 +1,24 @@
+{
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.lineNumbers": "relative",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 18,
+    "editor.cursorSurroundingLines": 8,
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.fontFamily": "'JetBrains Mono Regular', Consolas, 'Courier New', monospace",
+    "debug.openDebug": "neverOpen",
+    "azureFunctions.pickProcessTimeout": 90,
+    "vscode-neovim.compositeKeys": {
+      "jk": {
+        "command": "vscode-neovim.escape"
+      }
+    },
+    "[csharp]": {
+      "editor.maxTokenizationLineLength": 2500,
+      "editor.tabSize": 4
+    },
+    "vscode-neovim.compositeTimeout": 200
+}

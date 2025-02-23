@@ -1,21 +1,12 @@
 local map = vim.keymap
 
-map.set('i', 'jk', '<ESC>')
-
-map.set('n', 'o', 'o<ESC>')
-map.set('n', 'O', 'O<ESC>')
-
-map.set('n', '*', '*Nzz')
-map.set('n', '#', '#Nzz')
-
-map.set('n', '<C-q>', ':q<CR>')
-map.set('n', '<leader>q', ':bd<CR>')
-
 map.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+
 map.set('n', '<Tab>', ':bn<CR>')
 map.set('n', '<S-Tab>', ':bp<CR>')
 
-map.set('n', '<leader>p', '"0p')
+map.set('n', '<C-q>', ':q<CR>')
+map.set('n', '<leader>q', ':bd<CR>')
 
 local buf = require'vim.lsp.buf'
 map.set('n', 'grn', buf.rename)
