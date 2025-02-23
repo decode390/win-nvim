@@ -5,8 +5,8 @@ local function mapVscode(lhs, vscode_command)
 end
 
 -- Folding
-map.set('n', 'j', function() vim.cmd('silent! call VSCodeCall("cursorDown")') end, {silent = true})
-map.set('n', 'k', function() vim.cmd('silent! call VSCodeCall("cursorUp")') end, {silent = true})
+--map.set('n', 'j', function() vim.cmd('silent! call VSCodeCall("cursorDown")') end, {silent = true})
+--map.set('n', 'k', function() vim.cmd('silent! call VSCodeCall("cursorUp")') end, {silent = true})
 
 mapVscode('za', 'editor.toggleFold')
 mapVscode('<leader>e', 'workbench.view.explorer')
