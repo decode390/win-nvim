@@ -8,7 +8,7 @@
     "editor.cursorSurroundingLines": 8,
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "workbench.colorTheme": "One Dark Pro Darker",
-    "editor.fontFamily": "'JetBrains Mono Regular', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
     "debug.openDebug": "neverOpen",
     "azureFunctions.pickProcessTimeout": 90,
     "vscode-neovim.compositeKeys": {
