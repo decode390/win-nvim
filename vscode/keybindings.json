@@ -101,23 +101,32 @@
         "command": "-workbench.action.closeActiveEditor"
     },
     {
-        "key": "tab",
+        "key": "ctrl+n",
         "command": "selectNextSuggestion",
         "when": "editorTextFocus && suggestWidgetVisible"
     },
     {
-        "key": "shift+tab",
+        "key": "ctrl+p",
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetVisible"
     },
     {
-        "key": "tab",
+        "key": "ctrl+n",
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen && neovim.mode != 'cmdline'"
     },
     {
-        "key": "ctrl+shift+tab",
+        "key": "ctrl+p",
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
     },
 ]
